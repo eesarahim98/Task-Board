@@ -1,3 +1,134 @@
-h1{
-    color:orangered;
+body{
+    height:auto;
 }
+h1{
+    color:#F6A21E;
+    text-align:center;
+    margin-top: 10px;
+}
+.parent
+{   
+    position:relative;
+    width:90vw;
+    height:90vh;
+    border:solid black 2px;
+    background-color:#FFA500;
+    margin:auto;
+    display:grid;
+    grid-column:1fr 1fr 1fr;
+    grid-gap:3px;
+    justify-content: space-around;
+    bottom:15px;
+}
+.child-one
+{
+    width:25vw;
+    background-color:#FFC55C;
+    height:70vh;
+    grid-column-start:1;
+    grid-column-end:2;
+    margin-top:auto;
+    margin-bottom:auto;
+    display:grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-gap:5px;
+    border:2px solid rgb(0, 0, 0);
+}
+.child-tow
+{
+    width:25vw;
+    background-color:#FFC55C;
+    height:70vh;
+    grid-column-start:2 ;
+    grid-column-end:3;
+    margin-top:auto;
+    margin-bottom:auto;
+    display:grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-gap:5px;
+    border:2px solid rgb(0, 0, 0);
+}
+.child-three
+{
+    width:25vw;
+    background-color:#FFC55C;
+    height:70vh;
+    grid-column-start:3;
+    grid-column-end:3;
+    margin-top:auto;
+    margin-bottom:auto;
+    display:grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-gap:5px;
+    border:2px solid rgb(0, 0, 0);
+}
+.child-header
+{
+    text-align:center;
+    color:rgb(252, 252, 252);
+    font-family:'Philosopher';
+}
+.grand-child
+{
+    background-color: #FFD68A;
+    width:300px;
+    position:relative;
+    margin:auto;
+    border-radius:5px;
+    border:solid 2px #FFA500;
+    bottom:25px;
+}
+h4{
+    color:rgb(92, 86, 86);
+    text-align:center;
+    font-family:'Philosopher';
+}
+input{
+    position:relative;
+    margin-left:50px;
+    top:50%;
+    transform:translate(0,-50%);
+    width:200px;
+    border:0px;
+}
+::placeholder{
+    text-align: center;
+}
+@media only screen and (max-width:480px) {
+    body{
+        height:auto;
+    }
+    .parent{
+        height:300vh;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        
+    }
+    .child-one{
+        width:80vw;
+        position:relative;
+        margin:auto;
+    }
+    .child-tow{
+        width:80vw;
+        position:relative;
+        margin:auto;
+        margin-top:1px;
+    }
+    .child-three{
+        width:80vw;
+        position:relative;
+        margin:auto;
+        margin-top:1px;
+    }
+    .grand-child{
+        width:15em;
+    }
+    input{
+        width:auto;
+        margin-left:20px;
+        position:relative;
+    }
+}
+
